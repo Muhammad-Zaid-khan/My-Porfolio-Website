@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M.ZaidPortfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  </head>
+<body>
+    <div class="header" id="header">
+       <div class="container">
+        <nav>
+            <div class="logo">
+                <img src="images/logo.PNG" >
+            </div>
+            <div class="nav-links">
+                <ul id="menu-icons">
+                  <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+                    <li><a href="#header">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#prjects">MY PROJECTS</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+            </div>
+        </nav>
+
+        <div class="header-text">
+            <p>Web Developer</p>
+            <h2>I am <span>Muhammad Zaid</span> <br/> from Swabi KPK (Pakistan).</h2>
+        </div>
+       </div>
+    </div>
+    
+
+    <!-- ----- About ----- -->
+     <div class="about" id="about">
+       <div class="container">
+         <div class="row">
+            <div class="about-col-1">
+                <img src="images/mypic.jpg">  
+            </div>
+            <div class="about-col-2">
+               <h2>About Me</h2>
+               <p>I am <span>Muhammad Zaid</span> from Zaida (Swabi).A passionate a  Web Developer.  I'm proficient in HTML CSS JavaScript Node.js Express.js and React.js. I believe in creating meaningful user experiences, delivering high-quality work, continuous learning, and I approach every project with attention to detail, creativity, a collaborative spirit.</p>
+               <div class="tab-links">
+                  <div class="tab-title">
+                    <div class="tab-links active-link" onclick="opentab('skills')">Skills</div>
+                    <div class="tab-links" onclick="opentab('projects')">Projects</div>
+                    <div class="tab-links" onclick="opentab('education')">Education</div>
+                  </div>
+                  <div class="tab-content active-tab" id="skills">
+                    <ul>
+                       <li><span>Programming Languages:</span><br/>JavaScript, TypeScript, HTML, CSS, Java</li>
+                       <li><span>Frameworks and Libraries:</span><br/>React, Node.js, Express.js, Bootstrap</li>
+                       <li><span>Databases:</span><br/> MySQL, MongoDB</li>
+                       <li><span>Version Control:</span><br/> Git</li>
+                    </ul>
+                  </div>
+                  <div class="tab-content" id="projects">
+                    <ul>
+                       <li><span>University Website:</span><br/>Create in HTML and CSS only are completly responsive website and added all activities of university. <br/></li>
+                       <li><span>WeatherWise:</span><br/>Give name in input and click on search button Developed a dynamic and informative weather app that provides real-time weather,  wind speed, and Humidity updates for any location worldwide.</li>
+                       <li><span>TiskTide:</span><br/> This is todo app which Set personalized alerts to stay on top of your commitments.</li>
+                       <li><span>SnakeGame:</span><br/> Click on any button start the game which count your score with alot of fun and make for enjoyment.</li>
+                    </ul>
+                  </div>
+                  <div class="tab-content" id="education">
+                    <ul>
+                       <li><span>Associate Degree:</span><br/>Continue from Virtual University of  Pakistan.</li>
+                       <li><span>Fsc: in Computer Science</span><br/>From Orbit College Thankoi (Swabi).</li>
+                       <li><span>Matric: </span><br/>Fom Quaid-e-millat Model School Zaida (Swabi).<br>
+                    </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+       </div>
+    </div>
+                  <!-- ----My Project---- -->
+    <div class="projects" id="prjects">
+        <div class="container pro-content">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="project-list">
+               <div class="project-data">
+                  <img class="uni" src="images/university.jpg">
+                  <div class="layer">
+                  <h2>University Website</h2>
+                  <p>Create in HTML and CSS only are completly responsive website and added all activities of university. </p>
+                  <a href="https://github.com/Muhammad-Zaid-khan/UNIVERSITY-WEBSITE"><i class="fa-solid fa-up-right-from-square"></i></a>
+                  </div>
+               </div>
+               <div class="project-data">
+                <img  src="images/snake.jpg">
+                <div class="layer">
+                <h2>SnakeGame</h2>
+                <p>Click on any button start the game which count your score with alot of fun and make for enjoyment.</p>
+                <a href="https://github.com/Muhammad-Zaid-khan/SnakeGame"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+             </div>
+             <div class="project-data">
+                <img src="images/to-do.png">
+                <div class="layer">
+                <h2>TaskTide</h2>
+                <p>This is todo app which Set personalized alerts to stay on top of your commitments.</p>
+                <a href="https://github.com/Muhammad-Zaid-khan/TaskTide"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+             </div>
+             <div class="project-data">
+                <img src="images/weather.jfif">
+                <div class="layer">
+                <h2>WeatherWise</h2>
+                <p>Give name in input and click on search button Developed a dynamic and informative weather app that provides real-time weather,  wind speed, and Humidity updates for any location worldwide.</p>
+                <a href="https://github.com/Muhammad-Zaid-khan/WeatherWise"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+             </div>
+            </div>           
+        </div>
+    </div>
+    <!-- <a class="btn" href="#">SEE MORE</a> -->
+
+    <!-- -----Contact----- -->
+   <div class="contact" id="contact">
+    <div class="container">
+      <div class="contact-row">
+        <div class="left-content">
+          <h1 class="sub-title">Contact Us</h1>
+          <p><span><i class="fa-solid fa-envelope"></i></span> mzaii4410@gmail.com</p>
+          <p><span><i class="fa-solid fa-phone"></i></span> +923140932282</p>
+          <div class="social-icons">
+            <i class="fa-brands fa-facebook"></i>
+           <a  href="https://wa.me/923305568827" ><i aria-label="Chat on WhatsApp" class="fa-brands fa-whatsapp"></i></a> 
+           <a href="https://www.linkedin.com/in/muhammad-zaid-aa4735326/"><i  class="fa-brands fa-linkedin"></i></a> 
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+          <a href="images/Muhammad Zaid.pdf " download class="btn down">DOWNLOAD CV</a>
+        </div>
+        <div class="right-content">
+          <form name="submit-to-google-sheet">
+            <input type="text" placeholder="Enter Your Name" name="Name" required>
+            <input type="email" placeholder="Enter Your Email" name="Email" required>
+            <textarea name="Message" placeholder="Enter Your Message" rows="6" ></textarea>
+            <button type="submit" class="btn btn2">SUBMIT</button>
+          </form>
+          <span id="msg"> </span>
+        </div>
+      </div>
+    </div>
+   </div>
+   <div class="copy-right">
+    <p><span>&#169;</span> 2023 All Rights Reserved | Design By <span>Muhammad Zaid</span> with <span><i class="fa-solid fa-heart"></i></span></p
+   </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
